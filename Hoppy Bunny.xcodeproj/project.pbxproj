@@ -20,6 +20,8 @@
 		2529449A1F0D38C300E4AF84 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 252944991F0D38C300E4AF84 /* Obstacle.sks */; };
 		2529449C1F0DAC7B00E4AF84 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529449B1F0DAC7B00E4AF84 /* MSButtonNode.swift */; };
 		252944A01F0DBE3E00E4AF84 /* GameEffects.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2529449F1F0DBE3E00E4AF84 /* GameEffects.sks */; };
+		25494D781F11A7CA006E0231 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 25494D771F11A7CA006E0231 /* MainMenu.sks */; };
+		25494D7A1F11A932006E0231 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25494D791F11A932006E0231 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		252944991F0D38C300E4AF84 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 		2529449B1F0DAC7B00E4AF84 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		2529449F1F0DBE3E00E4AF84 /* GameEffects.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameEffects.sks; sourceTree = "<group>"; };
+		25494D771F11A7CA006E0231 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		25494D791F11A932006E0231 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				252944951F0D1F2300E4AF84 /* Hero.sks */,
 				252944811F0D188D00E4AF84 /* Actions.sks */,
 				252944831F0D188D00E4AF84 /* GameScene.swift */,
+				25494D771F11A7CA006E0231 /* MainMenu.sks */,
+				25494D791F11A932006E0231 /* MainMenu.swift */,
 				252944991F0D38C300E4AF84 /* Obstacle.sks */,
 				252944851F0D188D00E4AF84 /* GameViewController.swift */,
 				252944871F0D188D00E4AF84 /* Main.storyboard */,
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				252944A01F0DBE3E00E4AF84 /* GameEffects.sks in Resources */,
+				25494D781F11A7CA006E0231 /* MainMenu.sks in Resources */,
 				252944891F0D188D00E4AF84 /* Main.storyboard in Resources */,
 				252944801F0D188D00E4AF84 /* GameScene.sks in Resources */,
 				2529448B1F0D188D00E4AF84 /* Assets.xcassets in Resources */,
@@ -166,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				252944841F0D188D00E4AF84 /* GameScene.swift in Sources */,
+				25494D7A1F11A932006E0231 /* MainMenu.swift in Sources */,
 				252944861F0D188D00E4AF84 /* GameViewController.swift in Sources */,
 				252944981F0D2AA300E4AF84 /* CGFloat+Extensions.swift in Sources */,
 				2529447E1F0D188D00E4AF84 /* AppDelegate.swift in Sources */,
