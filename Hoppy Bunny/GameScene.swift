@@ -33,7 +33,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         /* Set up your scene here */
         
         /* Recursive node search for 'hero' (child of referenced node) */
-        hero = self.childNode(withName: "//hero") as! SKSpriteNode
+        hero = self.childNode(withName: "//hero") as? SKSpriteNode
         
         /* Set reference to scroll layer node */
         scrollLayer = self.childNode(withName: "scrollLayer")
@@ -48,16 +48,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         physicsWorld.contactDelegate = self
         
         /* Set UI connections */
-        buttonRestart = self.childNode(withName: "buttonRestart") as! MSButtonNode
+        buttonRestart = self.childNode(withName: "buttonRestart") as? MSButtonNode
         
         /* Setup restart button selection handler */
         buttonRestart.selectedHandler = {
             
             /* Grab reference to our SpriteKit view */
-            let skView = self.view as SKView!
+            let skView = self.view as SKView?
             
             /* Load Game scene */
-            let scene = GameScene(fileNamed: "GameScene") as GameScene!
+            let scene = GameScene(fileNamed: "GameScene") as GameScene?
             
             /* Ensure correct aspect mode */
             scene?.scaleMode = .aspectFill
@@ -66,7 +66,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             skView?.presentScene(scene)
         }
         
-        scoreLabel = self.childNode(withName: "scoreLabel") as! SKLabelNode
+        scoreLabel = self.childNode(withName: "scoreLabel") as? SKLabelNode
         
         /* Hide restart button */
         buttonRestart.state = .MSButtonNodeStateHidden

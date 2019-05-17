@@ -17,7 +17,7 @@ class MainMenu: SKScene {
         /* Setup your scene here */
         
         /* Set UI connections */
-        buttonPlay = self.childNode(withName: "buttonPlay") as! MSButtonNode
+        buttonPlay = self.childNode(withName: "buttonPlay") as? MSButtonNode
         
         buttonPlay.selectedHandler = {
             self.loadGame()
@@ -26,7 +26,7 @@ class MainMenu: SKScene {
     
     func loadGame() {
         /* 1) Grab reference to our SpriteKit view */
-        guard let skView = self.view as SKView! else {
+        guard let skView = self.view as SKView? else {
             print("Cound not get SKview")
             return
         }
